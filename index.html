@@ -4,6 +4,7 @@
 
 	<title>Search DEmo</title>
 	<link rel="stylesheet" type="text/css"  href="./css/style.css"/>
+	<script type="text/javascript" src="./js/function.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -11,14 +12,14 @@
 			<div class="header-fix">
 				<a href="#"><img src="./css/images/logo.png" alt=""></a>
 				<div class="header-right">
-				<ul class="header-list">
-					<li><a href="" class="header-a1">Đăng nhập</a></li>
-					<li><a href="" class="header-a2">Đăng ký</a></li>
-				</ul>		
+					<ul class="header-list">
+						<li><a href="" class="header-a1">Đăng nhập</a></li>
+						<li><a href="" class="header-a2">Đăng ký</a></li>
+					</ul>		
 				</div>
 			</div>
 			<div class="menu">
-				<div class="menu-box">
+				<div class="menu-box" id="menu-box">
 					<ul class="menu-list">
 						<li class="list-k"><a href="#" class="menu-a">Trang chủ</a></li>
 						<li class="list-k"><a href="#" class="menu-a">Giới thiệu</a></li>
@@ -36,7 +37,18 @@
 						<li><a href="#" class="menu-a">Hỏi đáp</a></li>
 						<li><a href="#" class="menu-a">Liên hệ</a></li>
 					</ul>
-					<p class="search-btn"><a/ href="#"><img src="./css/images/search_icon.png"/></a></p>
+					<p class="search-btn"><a/ href="#" onclick="hideMenu()"><img src="./css/images/search_icon.png"/></a></p>
+				</div>
+				<div id="search-box" style="display:none">
+					<ul>
+						<li class="search-input">
+							<form >
+								<input name="txtSearch" class="txt-input" type="text" placeholder="Nhập từ khóa " value=""> 
+							</form>
+						</li>
+						
+						<li class="img-close"><img src="./css/images/close_btn02.png" onclick="showMenu()"/></li>
+					<ul>
 				</div>	
 			</div>
 		</div>
@@ -440,7 +452,6 @@
 			</div>
 			
 		</div>
-	</div>
-	
+	</div>	
 </body>
 </html>

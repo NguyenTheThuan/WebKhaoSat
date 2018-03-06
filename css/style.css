@@ -19,7 +19,11 @@
 .search-btn {float:right;margin-top: -20px;}
 .menu-a {text-decoration:none; float:left; color:#FFF;  display: block;position: relative; text-align:center;padding:0px 15px 15px 15px; margin-bottom: -15px; }
 .menu-a:hover {background:#77787B;color:#F57B20; border-bottom:2px solid #F57B20;}
-
+#search-box {width:75%;margin:0px auto; background:#77787B;padding-top: 20px;}
+#search-box ul {list-style-type:none;}
+.search-input {float:left; width:95%; margin-top: -20px;margin-left: -5px; }
+input.txt-input{ border:1px solid #77787b; color:#FFF; padding: 12px; margin-top: -10px; width: 90%;}
+.img-close {float:right; width:5%;    margin-top: -20px;margin-right: -35px;}
 
 /*---------------------------------*/
 
@@ -118,7 +122,7 @@
 .coppy-r {margin-top:10px;}
  /*-------------------------------------------*/
 
-
+#search-box:after,
 .block-coloum:after,
 .banner-a2:after,
 .clear-fix:after,
